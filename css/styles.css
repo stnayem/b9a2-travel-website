@@ -1,0 +1,141 @@
+/*--------------
+ Shared styles
+--------------- */
+* {
+    margin: 0 auto;
+    font-family: 'Mulish', sans-serif;
+}
+
+.text-color-gray {
+    color: rgba(19, 19, 24, 0.70);
+
+}
+
+.text-color-white {
+    color: #FFF;
+}
+
+.text-paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/*----------------
+ banner section
+---------------- */
+.banner {
+    width: 1170px;
+    height: 500px;
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+
+    margin: 10px auto;
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+}
+
+.banner-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0));
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 16px;
+
+    position: absolute;
+    z-index: 2;
+}
+
+.banner .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 3;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    padding-bottom: 24px;
+}
+
+
+.banner .text-description {
+    text-align: center;
+    width: 70%;
+    padding-bottom: 48px;
+}
+
+.finding-place-sec {
+    display: flex;
+    gap: 24px;
+
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+
+.finding-place-sec input {
+    padding: 1rem;
+    border-radius: 8px;
+    background: #FFF;
+
+    border: 0;
+}
+
+.finding-place-sec .button-wrapper {
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 16px 34px;
+    color: #FFF;
+}
+
+.finding-place-sec .button-wrapper span {
+    padding-left: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+
+/* Responsive Media Queries */
+/* --------------
+    mobile screen
+---------------- */
+@media screen and (max-width:600px) {
+    .banner {
+        max-width: 335px;
+        height: auto;
+        padding: 32px 16px;
+    }
+
+
+    .banner h1 {
+        font-size: 1.4rem;
+        padding-bottom: 8px;
+    }
+
+    .banner .text-description {
+        font-size: 0.88rem;
+        font-weight: 400;
+        width: 100%;
+        padding-bottom: 32px;
+    }
+
+    .finding-place-sec {
+        flex-direction: column;
+        margin: 0;
+    }
+
+}
