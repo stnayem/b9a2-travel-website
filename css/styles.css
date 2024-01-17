@@ -2,8 +2,12 @@
  Shared styles
 --------------- */
 * {
-    margin: 0 auto;
+
     font-family: 'Mulish', sans-serif;
+}
+
+body {
+    margin: 0 auto;
 }
 
 .text-color-gray {
@@ -15,9 +19,33 @@
     color: #FFF;
 }
 
+.text-color-black {
+    color: #131318;
+}
+
+.text-color-orange {
+    color: #FF5400;
+}
+
 .text-paragraph {
     font-size: 1rem;
     font-weight: 400;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.primary-btn {
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 16px 34px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
 }
 
 
@@ -30,7 +58,7 @@
     background-image: url("../images/banner.png");
     background-repeat: no-repeat;
 
-    margin: 10px auto;
+    margin: 100px auto;
     position: relative;
     z-index: 1;
 
@@ -94,18 +122,102 @@
     border: 0;
 }
 
-.finding-place-sec .button-wrapper {
-    border-radius: 8px;
-    background: #FF5400;
-    padding: 16px 34px;
-    color: #FFF;
+.finding-place-sec span {
+    padding-left: 8px;
 }
 
-.finding-place-sec .button-wrapper span {
-    padding-left: 8px;
-    font-size: 1rem;
-    font-weight: 700;
+/* main section */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
 }
+
+/* popular tours section */
+
+.popular-tours {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 135px;
+
+}
+
+.popular-tours-content {
+    text-align: left;
+}
+
+.popular-tours-content .blog p {
+    margin: 0;
+}
+
+.popular-tours-content .blog p,
+.popular-tours-content .blog li {
+    padding-top: 24px;
+}
+
+.blog p {
+    width: 70%;
+}
+
+.blog-paragraph {
+    margin-bottom: 32px;
+}
+
+.popular-tours .popular-tours-image {
+    display: flex;
+    justify-content: right;
+    width: 540px;
+    height: 550px;
+}
+
+/*--------------
+ Footer section
+---------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 110px 0;
+    margin-top: 100px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.happy-travel-logo {
+    display: flex;
+    align-items: center;
+}
+
+.happy-travel-logo-text {
+    padding-left: 16px;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0px;
+}
+
+.social-icons-container {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    margin-right: 2rem;
+}
+
+footer .footer-horizontal-line {
+    width: 70%;
+    margin: 50px 0;
+    border: 1px solid rgba(19, 19, 24, 0.10);
+}
+
+footer .copyright-text {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 
 
 
@@ -114,10 +226,22 @@
     mobile screen
 ---------------- */
 @media screen and (max-width:600px) {
+
+    /* Mobile Responsive Shared Section */
+    .text-paragraph {
+        font-size: 0.875rem;
+    }
+
+    .section-title {
+        font-size: 1.25rem;
+    }
+
+    /* Mobile Responsive Banner Section */
     .banner {
-        max-width: 335px;
+        width: auto;
         height: auto;
         padding: 32px 16px;
+        margin: 20px;
     }
 
 
@@ -130,12 +254,58 @@
         font-size: 0.88rem;
         font-weight: 400;
         width: 100%;
+        margin: 0;
         padding-bottom: 32px;
     }
 
-    .finding-place-sec {
+    .finding-place-sec,
+    .popular-tours {
         flex-direction: column;
         margin: 0;
+    }
+
+    /* Mobile Responsive popular-tours Section */
+    .popular-tours {
+        padding: 0 21px;
+    }
+
+    .popular-tours .popular-tours-content .section-title,
+    .popular-tours .popular-tours-content ul {
+        margin: 0;
+    }
+
+    .popular-tours .popular-tours-content {
+        margin-bottom: 24px;
+    }
+
+
+    .popular-tours .popular-tours-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .popular-tours-content .blog p,
+    .popular-tours-content .blog li {
+        padding-top: 16px;
+    }
+
+    /*Mobile Responsive footer section */
+    footer {
+        padding: 33px 44px;
+    }
+
+    .happy-travel-logo-text {
+        padding-left: 9px;
+        font-size: 1.3rem;
+    }
+
+    footer .social-icons-container {
+        margin-top: 0;
+    }
+
+    footer .footer-horizontal-line {
+        width: 90%;
+        margin: 24px 0;
     }
 
 }
