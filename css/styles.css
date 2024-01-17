@@ -2,14 +2,16 @@
  Shared styles
 --------------- */
 * {
-
     font-family: 'Mulish', sans-serif;
 }
 
 body {
-    max-width: 1440px;
-    margin: 0 auto;
+    /* overflow-x: hidden;
+    width: 100%; */
+    /* margin: 0;
+    padding: 0; */
 }
+
 
 .text-color-gray {
     color: rgba(19, 19, 24, 0.70);
@@ -39,6 +41,8 @@ body {
 }
 
 .primary-btn {
+    display: flex;
+    justify-content: center;
     border-radius: 8px;
     background: #FF5400;
     padding: 16px 34px;
@@ -48,25 +52,40 @@ body {
     cursor: pointer;
     border: 0;
 }
+
+.display-none {
+    display: none;
+}
+
+/* header section */
+header {
+
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /*------------
    nav section
 -------------- */
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 135px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 135px;
 }
-nav ul{
-    display:flex;
+
+nav ul {
+    display: flex;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
-    padding-left:25px;
+    padding-left: 25px;
     /* update */
 }
-nav ul a{
-    text-decoration:none;
+
+nav ul a {
+    text-decoration: none;
 }
 
 
@@ -123,6 +142,12 @@ nav ul a{
     text-align: center;
     width: 70%;
     padding-bottom: 48px;
+}
+
+/* main section */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .finding-place-sec {
@@ -193,60 +218,138 @@ nav ul a{
     width: 540px;
     height: 550px;
 }
+
 /*---------------------
  Why Choose Us Section
 ----------------------- */
-.choose-us-description{
-    /* margin:0 auto; */
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-
-    text-align:center;
+.why-choose-us {
+    padding: 77px 135px 0px 135px;
 }
-.choose-us-description p{
-    width:60%;
+
+.choose-us-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
 }
-.choose-us-cards-first-two-card{
-    display:flex;
+
+.choose-us-description .section-title {
+    margin-bottom: 8px;
+}
+
+.choose-us-description p {
+    width: 60%;
+    margin-bottom: 48px;
+}
+
+.choose-us-cards-first-two-card {
+    display: flex;
 
 }
-.choose-us-cards-first-two-card .choose-us-card{
-    width:calc(50% - 10px);
-    border-radius:10px;
-    padding:20px;
+
+.choose-us-cards-first-two-card .choose-us-card {
+    width: calc(50% - 10px);
+    border-radius: 16px;
+    padding: 20px;
     /* update */
 }
-.choose-us-cards-first-two-card .choose-us-card-1{
-    margin-right:20px;
-    background-color: aliceblue;
-    border: 1px solid yellowgreen;
-    /* update */
+
+.choose-us-cards-first-two-card .choose-us-card-1 {
+    margin-right: 20px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
 }
-.choose-us-cards-first-two-card .choose-us-card-2{
-    background-color: lightblue;
-    border: 1px solid blue;
-    /* update */
+
+.choose-us-cards-first-two-card .choose-us-card-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
 }
-.choose-us-cards-last-one-card{
-    margin-top:20px;
-    display:flex;
+
+.choose-us-cards-last-one-card {
+    margin-top: 20px;
+    display: flex;
     justify-content: center;
     /* update */
 }
-.choose-us-cards-last-one-card .choose-us-card-3{
-    width:calc(50% - 50px);
-    border-radius:10px;
-    padding:20px;
 
-    background-color: lightpink;
-    border: 1px solid pink;
-    /* update */
+.choose-us-cards-last-one-card .choose-us-card-3 {
+    width: calc(50% - 50px);
+    padding: 20px;
+
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
 }
 
+/* Newsletter section */
+.newsletter-section {
+    display: flex;
+    gap: 24px;
+}
 
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
 
+.newsletter-form input {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+}
+
+.newsletter-form .primary-btn {
+    width: 100%;
+}
+
+.newsletter-details h3 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.newsletter-banner {
+    width: 70%;
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter-banner .discount-badge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-radius: 16px;
+    background: #FF5400;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-45deg) translate(420px, 85px);
+
+    position: absolute;
+    z-index: 2;
+}
+
+.newsletter-banner .discount-badge h4 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.newsletter-banner .discount-badge h3 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+}
 
 
 
@@ -254,6 +357,7 @@ nav ul a{
  Footer section
 ---------------- */
 footer {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -315,12 +419,17 @@ footer .copyright-text {
     .section-title {
         font-size: 1.25rem;
     }
+
+    /* body {
+        margin: 0 auto;
+    } */
+
     /* Mobile Responsive Nav Section */
-    nav{
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        padding:20px 135px;
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 135px;
     }
 
 
@@ -352,6 +461,11 @@ footer .copyright-text {
         margin: 0;
     }
 
+    .finding-place-sec {
+        width: 80%;
+    }
+
+
     /* Mobile Responsive popular-tours Section */
     .popular-tours {
         padding: 0 21px;
@@ -376,19 +490,56 @@ footer .copyright-text {
     .popular-tours-content .blog li {
         padding-top: 16px;
     }
+
     /* Mobile Responsive why choose us section */
-    .choose-us-cards-first-two-card{
-        flex-direction:column;
+    .why-choose-us {
+        margin: 0 20px;
+        padding: 0;
     }
+
+    .choose-us-description .section-title {
+        margin-bottom: 2px;
+    }
+
+    .choose-us-description p {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .choose-us-cards-first-two-card {
+        flex-direction: column;
+    }
+
+
     .choose-us-cards-first-two-card .choose-us-card-1,
-    .choose-us-cards-first-two-card .choose-us-card-2{
-        width:100%;
+    .choose-us-cards-first-two-card .choose-us-card-2 {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .choose-us-cards-last-one-card {
+        margin-top: 0;
+        display: block;
+    }
+
+    .choose-us-cards-last-one-card .choose-us-card-3 {
+        width: 100%;
+    }
+
+    .choose-us-card {
+        flex: 1;
         /* update */
     }
-    .choose-us-card
-    {
-        flex:1;
-        /* update */
+
+    /*Mobile Responsive newsletter section */
+    .newsletter-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter-form,
+    .newsletter-banner {
+        width: 100%;
     }
 
     /*Mobile Responsive footer section */

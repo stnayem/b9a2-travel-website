@@ -21,11 +21,11 @@
 
 <body>
     <!-- header section start -->
-    <header>
+    <header class="display-none">
         <nav>
             <div class="happy-travel-logo">
                 <img src="images/logo.png" alt="">
-                <h2 class="happy-travel-logo-text"><span class="text-color-black">Hero</span> <span
+                <h2 class="happy-travel-logo-text"><span class="text-color-black">Happy</span> <span
                         class="text-color-orange">Travel</span></h2>
             </div>
             <div class="pages">
@@ -51,7 +51,7 @@
                     <input class="text-color-gray" type="text" placeholder="Select Type">
                     <div class="primary-btn">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <span>Finding Now</span>
+                        <span>Find Now</span>
                     </div>
                 </div>
             </div>
@@ -60,62 +60,92 @@
 
     <main>
         <!-- popular tours section -->
-        <section class="popular-tours">
-            <article class="popular-tours-content">
-                <h2 class="text-color-black section-title">Our Popular Tours</h2>
-                <div class="blog-paragraph">
-                    <div class="blog text-color-gray text-paragraph">
-                        <p>Experience the awe inspiring Trio Mountain Everest with Happy Travel.</p>
-                        <ul>
-                            <li>Conquer the world's highest peak, standing tall at 29,032 feet.</li>
-                            <li>Immerse in Sherpa traditions amidst the Himalayan grandeur.</li>
-                            <li> Witness breathtaking vistas from Everest Base Camp, a journey etched in memory.</li>
-                        </ul>
-                        <p>Trio Everest: Conquer the summit, embrace Sherpa culture, savor panoramic vistas. Happy
-                            Travel's unforgettable adventure awaits.</p>
+        <div class="display-none">
+            <section class="popular-tours">
+                <article class="popular-tours-content">
+                    <h2 class="text-color-black section-title">Our Popular Tours</h2>
+                    <div class="blog-paragraph">
+                        <div class="blog text-color-gray text-paragraph">
+                            <p>Experience the awe inspiring Trio Mountain Everest with Happy Travel.</p>
+                            <ul>
+                                <li>Conquer the world's highest peak, standing tall at 29,032 feet.</li>
+                                <li>Immerse in Sherpa traditions amidst the Himalayan grandeur.</li>
+                                <li> Witness breathtaking vistas from Everest Base Camp, a journey etched in memory.
+                                </li>
+                            </ul>
+                            <p>Trio Everest: Conquer the summit, embrace Sherpa culture, savor panoramic vistas. Happy
+                                Travel's unforgettable adventure awaits.</p>
+                        </div>
                     </div>
-                </div>
-                <button class="primary-btn">Read More</button>
-            </article>
-            <img class="popular-tours-image" src="images/Rectangle 4.png" alt="">
+                    <button class="primary-btn">Read More</button>
+                </article>
+                <img class="popular-tours-image" src="images/Rectangle 4.png" alt="">
 
-        </section>
+            </section>
+        </div>
+
 
         <!-- why-choose-us section -->
-        <div class="why-choose-us">
+        <section class="display-none why-choose-us">
             <div class="choose-us-description">
                 <h2 class="section-title">Why Choose Us</h2>
-            <p class="text-color-gray text-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusantium eveniet fugit ullam voluptate molestiae commodi sint. Optio, nobis quia.</p>
+                <p class="text-color-gray text-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                    accusantium eveniet fugit ullam voluptate molestiae commodi sint. Optio, nobis quia.</p>
             </div>
             <div class="choose-us-cards-container">
                 <div class="choose-us-cards-first-two-card">
                     <div class="choose-us-card choose-us-card-1">
-                        <img src="images/logo.png" alt="">
+                        <img src="images/icons/hotel 1.png" alt="">
                         <h3 class="choose-us-card-title">Handpicked Hotel</h3>
-                        <p class="choose-us-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro ratione at fuga magni assumenda perferendis quod iusto eligendi quibusdam!</p>
+                        <p class="choose-us-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Natus porro ratione at fuga magni assumenda perferendis quod iusto eligendi quibusdam!</p>
                     </div>
                     <div class="choose-us-card choose-us-card-2">
-                        <img src="images/logo.png" alt="">
+                        <img src="images/icons/map 1.png" alt="">
                         <h3 class="choose-us-card-title">World Class Service</h3>
-                        <p class="choose-us-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro ratione at fuga magni assumenda perferendis quod iusto eligendi quibusdam!</p>
+                        <p class="choose-us-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Natus porro ratione at fuga magni assumenda perferendis quod iusto eligendi quibusdam!</p>
                     </div>
                 </div>
                 <div class="choose-us-cards-last-one-card">
                     <div class="choose-us-card choose-us-card-3">
-                        <img src="images/logo.png" alt="">
+                        <img src="Images/icons/price-tag 1.png" alt="">
                         <h3 class="choose-us-card-title">Best Price Guarantee</h3>
-                        <p class="choose-us-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro ratione at fuga magni assumenda perferendis quod iusto eligendi quibusdam!</p>
+                        <p class="choose-us-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Natus porro ratione at fuga magni assumenda perferendis quod iusto eligendi quibusdam!</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- newsletter section -->
+        <section class="newsletter-section">
+            <div class="newsletter-form">
+                <div class="newsletter-details">
+                    <h3>Newsletter</h3>
+                    <p class="text-color-gray text-paragraph">Get your daily dose of travel news & tips. Sign up today!
+                    </p>
+                </div>
+                <hr>
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email">
+                <button type="input" class="primary-btn">Subscribe</button>
+            </div>
+            <div class="newsletter-banner">
+                <img class="newsletter-img" src="images/Rectangle 8 (1).png" alt="">
+                <div class="discount-badge">
+                    <h4>happytravel.com</h4>
+                    <h3>Save up to 70%</h3>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer section start -->
-    <footer>
+    <footer class="display-none">
         <div class="happy-travel-logo">
             <img src="images/logo.png" alt="">
-            <h2 class="happy-travel-logo-text"><span class="text-color-black">Hero</span> <span
+            <h2 class="happy-travel-logo-text"><span class="text-color-black">Happy</span> <span
                     class="text-color-orange">Travel</span></h2>
         </div>
         <p class="text-color-gray text-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias,
